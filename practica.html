@@ -1,23 +1,109 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/all.min.css">
     <link rel="shortcut icon" href="img/mario.ico">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
     <title>Hello, world!</title>
   </head>
   <body>
-      
+    
+    <div class="modal" id="registro">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h4 class="modal-title"> Registro de jugadores</h4>
+            <button class="close" type="button" data-dismiss="modal">&times;</button>
+          </div>
+
+          <div class="modal-body">
+            <input type="text" placeholder="Codigo" id="txtCodigo">
+            <input type="text" placeholder="Ingrese su nombre" id="txtNombre">
+            <input type="text" placeholder="Telefono" id="txtTelefono">
+            <input type="text" placeholder="Direccion" id="txtDireccion">
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn btn-info" type="button" data-dismiss="modal" id="btnAgregar">Agregar</button>
+            <button class="btn btn-danger" type="button" data-dismiss="modal">Cerrar</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container-fluid">
+      <div class="col">
+        <div class="col-3"></div>
+        <div class="col-9">
+          <table class="table table-info table-hover table-bordered col-12" id="tablaRegistro">
+            <thead>
+              <tr class="bg-info text-light">
+                <th>Codigo</th>
+                <th>Nombre</th>
+                <th>Telefono</th>
+                <th>Direccion</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>0001</td>
+                <td>Rosa Melano FLores</td>
+                <td>3017536556</td>
+                <td>Cr 27sur # 25 - 16 Envigado </td>
+                <td>
+                  <button class="btn btn-info" data-toggle="modal" data-target="#registro">
+                  <i class="far fa-file text-light"></i>
+                  </button>
+                  <button class="btn btn-warning" >
+                  <i class="far fa-edit text-light"></i>
+                  </button>
+                  <button class="btn btn-danger">
+                  <i class="fa fa-trash text-light"></i>
+                  </button>
+
+                </td>
+              </tr>
+               <tr>
+                <td>0016</td>
+                <td>Challan Rodrigo Rodriguez</td>
+                <td>3113285745</td>
+                <td>Cr 27sur # 25 - 17 Envigado </td>
+                <td>
+                  <button class="btn btn-info" data-toggle="modal" data-target="#registro">
+                  <i class="far fa-file text-light"></i>
+                  </button>
+                  <button class="btn btn-warning">
+                  <i class="far fa-edit text-light"></i>
+                  </button>
+                  <button class="btn btn-danger">
+                  <i class="fa fa-trash text-light"></i>
+                  </button>
+
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script type="text/javaScript" src="js/jquery-3.5.1.slim.min.js"></script>
-    <script type="text/javaScript" src="js/popper.min.js"></script>
-    <script type="text/javaScript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/acciones.js"></script>
+    <script type="text/javascript" src="js/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
   </body>
-</html>
+</html> 
